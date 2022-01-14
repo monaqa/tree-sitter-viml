@@ -114,6 +114,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "unmap_statement"
+        },
+        {
+          "type": "SYMBOL",
           "name": "augroup_statement"
         },
         {
@@ -2339,6 +2343,131 @@
           ]
         }
       ]
+    },
+    "unmap_statement": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "cmd",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_unmap"
+                },
+                "named": false,
+                "value": "unmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_nunmap"
+                },
+                "named": false,
+                "value": "nunmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_vunmap"
+                },
+                "named": false,
+                "value": "vunmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_xunmap"
+                },
+                "named": false,
+                "value": "xunmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_sunmap"
+                },
+                "named": false,
+                "value": "sunmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_ounmap"
+                },
+                "named": false,
+                "value": "ounmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_iunmap"
+                },
+                "named": false,
+                "value": "iunmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_lunmap"
+                },
+                "named": false,
+                "value": "lunmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_cunmap"
+                },
+                "named": false,
+                "value": "cunmap"
+              },
+              {
+                "type": "ALIAS",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_tunmap"
+                },
+                "named": false,
+                "value": "tunmap"
+              }
+            ]
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_unmap_definition"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_cmd_separator"
+        }
+      ]
+    },
+    "_unmap_definition": {
+      "type": "FIELD",
+      "name": "lhs",
+      "content": {
+        "type": "ALIAS",
+        "content": {
+          "type": "SYMBOL",
+          "name": "_map_lhs"
+        },
+        "named": true,
+        "value": "map_side"
+      }
     },
     "_keycode_in": {
       "type": "SEQ",
@@ -5078,6 +5207,46 @@
     {
       "type": "SYMBOL",
       "name": "_tnoremap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_unmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_nunmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_vunmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_xunmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_sunmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_ounmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_iunmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_lunmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_cunmap"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "_tunmap"
     },
     {
       "type": "SYMBOL",

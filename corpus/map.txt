@@ -265,3 +265,42 @@ nnoremap a :echo 1\|echo 2<Cr>
   (map_statement
     (map_side)
     (map_side)))
+
+================================================================================
+All unmap commands
+================================================================================
+
+unmap a
+nunmap a
+vunmap a
+xunmap a
+sunmap a
+ounmap a
+iunmap a
+lunmap a
+cunmap a
+tunmap a
+
+--------------------------------------------------------------------------------
+
+(script_file
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side))
+  (unmap_statement
+    (map_side)))

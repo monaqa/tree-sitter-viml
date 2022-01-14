@@ -79,6 +79,16 @@ module.exports = grammar({
     $._lnoremap,
     $._cnoremap,
     $._tnoremap,
+    $._unmap,
+    $._nunmap,
+    $._vunmap,
+    $._xunmap,
+    $._sunmap,
+    $._ounmap,
+    $._iunmap,
+    $._lunmap,
+    $._cunmap,
+    $._tunmap,
     $._augroup,
     $._highlight,
     $._syntax,
@@ -121,6 +131,7 @@ module.exports = grammar({
         $.silent_statement,
         $.register_statement,
         $.map_statement,
+        $.unmap_statement,
         $.augroup_statement,
         $.highlight_statement,
         $.syntax_statement,
@@ -442,6 +453,31 @@ module.exports = grammar({
           field('rhs', alias($._map_rhs, $.map_side)),
         ),
       ),
+
+    unmap_statement: ($) =>
+      seq(
+        field(
+          'cmd',
+          choice(
+            ...[
+              'unmap',
+              'nunmap',
+              'vunmap',
+              'xunmap',
+              'sunmap',
+              'ounmap',
+              'iunmap',
+              'lunmap',
+              'cunmap',
+              'tunmap',
+            ].map((name) => tokalias($, name)),
+          ),
+        ),
+        $._unmap_definition,
+        $._cmd_separator,
+      ),
+
+    _unmap_definition: ($) => field('lhs', alias($._map_lhs, $.map_side)),
 
     _keycode_in: ($) => seq(token.immediate(/C-\S/), token.immediate('>')),
 

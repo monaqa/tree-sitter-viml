@@ -196,6 +196,10 @@
             "named": true
           },
           {
+            "type": "unmap_statement",
+            "named": true
+          },
+          {
             "type": "user_command",
             "named": true
           },
@@ -560,6 +564,10 @@
         },
         {
           "type": "unlet_statement",
+          "named": true
+        },
+        {
+          "type": "unmap_statement",
           "named": true
         },
         {
@@ -1907,6 +1915,10 @@
         },
         {
           "type": "unlet_statement",
+          "named": true
+        },
+        {
+          "type": "unmap_statement",
           "named": true
         },
         {
@@ -3532,6 +3544,10 @@
           "named": true
         },
         {
+          "type": "unmap_statement",
+          "named": true
+        },
+        {
           "type": "user_command",
           "named": true
         },
@@ -3752,6 +3768,10 @@
         },
         {
           "type": "unlet_statement",
+          "named": true
+        },
+        {
+          "type": "unmap_statement",
           "named": true
         },
         {
@@ -4728,6 +4748,68 @@
     }
   },
   {
+    "type": "unmap_statement",
+    "named": true,
+    "fields": {
+      "cmd": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "cunmap",
+            "named": false
+          },
+          {
+            "type": "iunmap",
+            "named": false
+          },
+          {
+            "type": "lunmap",
+            "named": false
+          },
+          {
+            "type": "nunmap",
+            "named": false
+          },
+          {
+            "type": "ounmap",
+            "named": false
+          },
+          {
+            "type": "sunmap",
+            "named": false
+          },
+          {
+            "type": "tunmap",
+            "named": false
+          },
+          {
+            "type": "unmap",
+            "named": false
+          },
+          {
+            "type": "vunmap",
+            "named": false
+          },
+          {
+            "type": "xunmap",
+            "named": false
+          }
+        ]
+      },
+      "lhs": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "map_side",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "user_command",
     "named": true,
     "fields": {},
@@ -5157,6 +5239,10 @@
     "named": false
   },
   {
+    "type": "cunmap",
+    "named": false
+  },
+  {
     "type": "default",
     "named": false
   },
@@ -5321,12 +5407,16 @@
     "named": false
   },
   {
-    "type": "keyword",
-    "named": true
+    "type": "iunmap",
+    "named": false
   },
   {
     "type": "keyword",
     "named": false
+  },
+  {
+    "type": "keyword",
+    "named": true
   },
   {
     "type": "let",
@@ -5346,6 +5436,10 @@
   },
   {
     "type": "lua",
+    "named": false
+  },
+  {
+    "type": "lunmap",
     "named": false
   },
   {
@@ -5389,6 +5483,10 @@
     "named": false
   },
   {
+    "type": "nunmap",
+    "named": false
+  },
+  {
     "type": "off",
     "named": false
   },
@@ -5407,6 +5505,10 @@
   {
     "type": "option_name",
     "named": true
+  },
+  {
+    "type": "ounmap",
+    "named": false
   },
   {
     "type": "perl",
@@ -5509,6 +5611,10 @@
     "named": true
   },
   {
+    "type": "sunmap",
+    "named": false
+  },
+  {
     "type": "syntax",
     "named": false
   },
@@ -5533,6 +5639,10 @@
     "named": false
   },
   {
+    "type": "tunmap",
+    "named": false
+  },
+  {
     "type": "undercurl",
     "named": false
   },
@@ -5542,6 +5652,10 @@
   },
   {
     "type": "unlet",
+    "named": false
+  },
+  {
+    "type": "unmap",
     "named": false
   },
   {
@@ -5565,6 +5679,10 @@
     "named": false
   },
   {
+    "type": "vunmap",
+    "named": false
+  },
+  {
     "type": "while",
     "named": false
   },
@@ -5574,6 +5692,10 @@
   },
   {
     "type": "xnoremap",
+    "named": false
+  },
+  {
+    "type": "xunmap",
     "named": false
   },
   {
